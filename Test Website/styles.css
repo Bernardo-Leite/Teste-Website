@@ -1,0 +1,273 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+ color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin-top: 200px;
+
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.services-section {
+  padding: 40px 20px;
+  background-color: #f8f8f8; /* Cor de fundo */
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grelha adaptável */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+.service-item img {
+  width: 50%;
+  height: auto; /* Garante que as imagens sejam proporcionais */
+  border-radius: 2px; /* Arredonda as bordas da imagem */
+  margin-bottom: 1px; /* Espaço entre a imagem e o texto */
+}
+
+.service-item {
+  background: #ffffff; /* Fundo branco para os itens */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leve sombra */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.service-item a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Elevação ao passar o mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Realce */
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #222; /* Cor de fundo semelhante ao exemplo */
+  padding: 20px 0;
+  border-top: 2px solid #eaeaea;
+  text-align: center; /* Garantir alinhamento para telas menores */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Adapta para telas menores */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px; /* Para adaptar-se bem a dispositivos menores */
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Cor do título */
+}
+
+.footer-column p {
+  font-size: 0.9rem;
+  color: white; /* Cor do texto */
+  margin: 5px 0;
+}
+
+.footer-column a {
+  color: #007BFF; /* Link em azul */
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.certification-icon {
+  margin-top: 10px;
+  max-width: 50px; /* Largura da imagem do selo */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Alinha as colunas verticalmente em telas menores */
+  }
+  .footer-column {
+    text-align: center;
+  }
+}
+
+
+.instagram img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Letras maiúsculas */
+  color: black; /* Cor do texto principal */
+  text-shadow: 2px 2px 2px #aaa; /* Sombra para o efeito 3D */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 5rem; /* Ajuste o tamanho conforme necessário */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Letras maiúsculas */
+  color: white; /* Cor do texto principal */
+  text-shadow: 2px 2px 2px #aaa; /* Sombra para o efeito 3D */
+  margin: 0;
+  padding: 0;
+}
+

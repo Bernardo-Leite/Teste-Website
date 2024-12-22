@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo | ADR ELÉTRICA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="codigo.js"></script>
+  <!-- Header -->
+  <header>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#orcamento">Orçamentos</a></li>
+          <li><a href="#foot">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="overlay">
+      <div class="content">
+        <h1>Bem-vindo à ADR ELÉTRICA</h1>
+        <p>Explore nossos serviços, blog e mais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Na ADR ELÉTRICA, somos especialistas em oferecer serviços de alta qualidade para instalações industriais, domesticas e na sua manutenção. Trabalhamos com profissionais certificados e com vários anos de experiência no ramo.</p>
+    </div>
+  </section>
+
+  <section id="servicos" class="services-section">
+  <div class="container">
+    <hr>  </hr>
+    <h2>Serviços</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="apartment.png" alt="Elétricidade Residencial">
+        <h3>Elétricidade Residencial</h3>
+        <p>Serviços de instalações elétricas para residências e indústrias.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="industrial.png" alt="Elétricidade Residencial">
+        <h3>Elétricidade Industrial</h3>
+        <p>Reparação e manutenção de sistemas elétricos.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="building.png" alt="Elétricidade Residencial">
+        <h3>Elétricidade Predial</h3>
+        <p>Soluções tecnológicas para automatizar sua casa.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="alarm.png" alt="Elétricidade Residencial">
+        <h3>Sistema de Alarme</h3>
+        <p>Planejamento e projetos personalizados.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+       <div class="service-item">
+        <img src="gate.png" alt="Elétricidade Residencial">
+        <h3>Automatismos</h3>
+        <p>Planejamento e projetos personalizados.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="security-camera.png" alt="Elétricidade Residencial">
+        <h3>Sistema de Vigilância</h3>
+        <p>Serviços de instalações elétricas para residências e indústrias.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="solar-panel.png" alt="Elétricidade Residencial">
+        <h3>Paineis Solares</h3>
+        <p>Serviços de instalações elétricas para residências e indústrias.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="service-item">
+        <img src="troubleshooting.png" alt="Elétricidade Residencial">
+        <h3>Manutenção em Geral</h3>
+        <p>Serviços de instalações elétricas para residências e indústrias.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="orcamento" class="contact">
+    <div class="container">
+      <hr>
+      <h2>Solicite um Orçamento</h2>
+      <form action="#">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>REDES SOCIAS</h4>
+      <a href="https://www.instagram.com/adreiseletrica/"><img src="instagram1.png" alt="Certificação" class="certification-icon"></a>
+      
+    </div>
+    <div class="footer-column">
+      <h4><img src="maps-and-flags.png" alt="email" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;"> MORADA</h4>
+      <p>Rua Nossa Sra. da Conceição, n.º 481</p>
+      <p>3720-363 São João de Ver, Portugal</p>
+    </div>
+    <div class="footer-column">
+      <h4><img src="phone-call.png" alt="email" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;"> TELEFONE</h4>
+      <p>(+351) 256 881 212</p>
+     
+    </div>
+    <div class="footer-column">
+      <h4><img src="email.png" alt="email" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;"> E-MAIL</h4> 
+      <p><a href="mailto:a.d.reiseletrica@gmail.com">a.d.reiseletrica@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Lista de imagens para o slider
+  const images = [
+    "solarPanels.jpg",
+    "quadroEle.jpg",
+    "cameraVi.jpg",
+    "WIRES.jpg"
+  ];
+
+  // Seleciona o elemento da seção hero
+  const heroSection = document.querySelector(".hero");
+
+  let currentIndex = 0; // Índice da imagem atual
+
+  // Função para trocar o background
+  function changeBackground() {
+    currentIndex = (currentIndex + 1) % images.length; // Avança para a próxima imagem
+    heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+  }
+
+  // Intervalo para trocar as imagens a cada 5 segundos
+  setInterval(changeBackground, 7000);
+
+  // Define a imagem inicial
+  heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
