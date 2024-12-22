@@ -1,2 +1,2 @@
 # Teste-Website
-Experiment in developing a website with HTML and CSS
+Experiment in developing a website with HTML, CSS and Javascript.
